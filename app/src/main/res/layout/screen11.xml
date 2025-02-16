@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Profile Name -->
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/back_button"
+        android:layout_centerHorizontal="true"
+        android:text="OliviaD"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <!-- Requests Tab -->
+
+    <TextView
+        android:id="@+id/dms_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="410 Followers"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/requests_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="387 Following"
+        android:layout_marginRight="80dp"
+
+        android:textSize="14sp"
+        android:layout_below="@id/profile_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Underline for Followers Tab -->
+    <View
+        android:id="@+id/dms_underline"
+        android:layout_width="89dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_below="@id/dms_tab"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/searchbar"
+        android:layout_below="@id/dms_underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="8dp">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="491dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Search"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/search_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- DM List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbar"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+
+
+            <ImageView
+                android:id="@+id/profile_pic1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic1"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fouad Ikram"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic1"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic2"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umar Farooq"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic2"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic3"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ifra Batool"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic3"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic4"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saad Salman"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic4"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic5"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dua Imran"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic5"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic6"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owais Idrees"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic6"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/profile_pic7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_pic7"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:clipToOutline="true"
+                android:background="@drawable/circle_background"/>
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AS Bhatti"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/profile_pic7"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/message_icon7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/message_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
